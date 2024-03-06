@@ -16,7 +16,7 @@ timezone: America/Toronto
 
 title: Gs' Devlog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: A story of a developer in Canada  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This is to write something technical with a software development.
@@ -85,10 +85,10 @@ theme_mode: # [light | dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "https://github.com/lgswin/lgswin.github.io/assets/83533586/4cb8013d-8a88-441c-8660-dce4dceb5c5b"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
