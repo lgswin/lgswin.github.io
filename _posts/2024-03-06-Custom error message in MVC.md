@@ -21,7 +21,7 @@ If it's set to None, any validation errors are not displayed.
 
 
 ## Common data attributes for validation
-```C#
+```csharp
 Required
 Range(min, max)
 Range(type, min, max)
@@ -31,7 +31,7 @@ Compare(other)
 Display(Name = "n")
 ```
 
-```C#
+```csharp
 using System.ComponentModel.DataAnnotations;
 ...
 public class Movie
@@ -46,7 +46,7 @@ public class Movie
 ```
 
 ## Custom validation attributes
-```C#
+```csharp
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 ...
 [HttpPost()]
