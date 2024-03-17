@@ -77,29 +77,20 @@ public class MainClass
 
 ```
 
-Namespace Imports: 
-The using directives import necessary namespaces:
+* System.Collections.Generic: Offers generic collection classes like HashSet.
+* System.IO: Contains types that enable reading from and writing to files and data streams.
+* Newtonsoft.Json: A popular JSON framework for .NET.
 
-System: Provides fundamental types and base classes.
-System.Collections.Generic: Offers generic collection classes like HashSet.
-System.IO: Contains types that enable reading from and writing to files and data streams.
-Newtonsoft.Json: A popular JSON framework for .NET.
-Main Method:
-The entry point of the program is the Main method.
 
-Reading JSON Data:
+* Reading JSON Data:
 The code reads the contents of a JSON file named data.json into a string variable jsonString using File.ReadAllText().
-
-Deserializing JSON:
+* Deserializing JSON:
 The jsonString is deserialized into a dynamic object jsonObject using JsonConvert.DeserializeObject<dynamic>(). This dynamic object represents the JSON structure.
-
-Extracting Unique Student IDs:
+* Extracting Unique Student IDs:
 A HashSet<string> named uniqueStudentIds is initialized to store unique student IDs.
-
-Iterating Through JSON Data:
+* Iterating Through JSON Data:
 The code iterates through each entry in the data array within the JSON object. If an entry contains a non-null studentId, it's added to the uniqueStudentIds set after converting it to a string.
-
-Printing Unique Student IDs:
+* Printing Unique Student IDs:
 Finally, the code prints each unique student ID stored in the uniqueStudentIds set to the console.
 
 
