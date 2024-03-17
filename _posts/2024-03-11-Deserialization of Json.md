@@ -9,6 +9,9 @@ tags: [C#, Json, deserialization, interview]
 
 ## Find all unique studentId from the json file.
 
+Working with JSON data is a common task in modern software development, especially when dealing with APIs, databases, or configuration files. In this example, we'll explore a C# code snippet that reads JSON data from a file, extracts unique student IDs, and prints them to the console. Through a step-by-step explanation, we'll gain insights into how this code accomplishes its task.
+
+
 - data.json
 
 ```csharp
@@ -73,3 +76,31 @@ public class MainClass
 }
 
 ```
+
+Namespace Imports: 
+The using directives import necessary namespaces:
+
+System: Provides fundamental types and base classes.
+System.Collections.Generic: Offers generic collection classes like HashSet.
+System.IO: Contains types that enable reading from and writing to files and data streams.
+Newtonsoft.Json: A popular JSON framework for .NET.
+Main Method:
+The entry point of the program is the Main method.
+
+Reading JSON Data:
+The code reads the contents of a JSON file named data.json into a string variable jsonString using File.ReadAllText().
+
+Deserializing JSON:
+The jsonString is deserialized into a dynamic object jsonObject using JsonConvert.DeserializeObject<dynamic>(). This dynamic object represents the JSON structure.
+
+Extracting Unique Student IDs:
+A HashSet<string> named uniqueStudentIds is initialized to store unique student IDs.
+
+Iterating Through JSON Data:
+The code iterates through each entry in the data array within the JSON object. If an entry contains a non-null studentId, it's added to the uniqueStudentIds set after converting it to a string.
+
+Printing Unique Student IDs:
+Finally, the code prints each unique student ID stored in the uniqueStudentIds set to the console.
+
+
+This C# code snippet demonstrates a straightforward approach to extracting unique student IDs from JSON data. By leveraging the Newtonsoft.Json library for JSON deserialization and HashSet for efficient storage of unique IDs, the code efficiently processes the data and outputs the desired result. Developers can adapt and extend this code to handle various JSON structures and extract specific information based on their requirements.
