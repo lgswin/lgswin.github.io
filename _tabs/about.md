@@ -21,7 +21,17 @@ order: 4
 1. I studied mechanics for 4 years at YoungNam University.
 2. I studied Computer Aid Design for 2 years at Busan University, got Master's degree.
 3. I worked at Samsung as an software engineer util 2023.
+4. I am studying in the Computer Application Development program at Conestoga College.
 
-## **What I am interested in**
+## **My skill set**
+1. Node.js + MongoDB + Javascript + Bootstrap + Socket.io = Fullstack Web application 
+   => BioHarmoney = Capstone project (Github link)
+2. ASP.net + C#
+  => Course work
+3. Android + Java + Kotlin
+  => SamsungMusic, Samsung TVPlus
+4. React + React Native
+  => Mobile application
+
 
 ## **My history**
