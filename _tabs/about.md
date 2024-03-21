@@ -18,10 +18,10 @@ order: 4
 
 ## **Quick Facts About Me**
 
-1. I studied mechanics for 4 years at YoungNam University.
-2. I studied Computer Aid Design for 2 years at Busan University, got Master's degree.
-3. I worked at Samsung as an software engineer util 2023.
-4. I am studying in the Computer Application Development program at Conestoga College.
+1. Mechanics for 4 years at YoungNam University.
+2. Computer Aid Design for 2 years at Busan University, got Master's degree.
+3. Samsung as an software engineer util 2023.
+4. Computer Application Development program at Conestoga College.
 
 ## **My skill set**
 1. Node.js + MongoDB + Javascript + Bootstrap + Socket.io = Fullstack Web application 
