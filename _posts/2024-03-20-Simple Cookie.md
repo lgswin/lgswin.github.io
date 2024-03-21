@@ -6,8 +6,6 @@ categories: [ASP.Net, cookie]
 tags: [ASP.Net, C#, cookie]
 ---
 
-Title: Implementing Cookie Management in ASP.NET Core with C#
-
 Cookies are a fundamental aspect of web development, allowing web applications to store small pieces of data on the client-side. In ASP.NET Core, managing cookies is straightforward, thanks to the built-in support provided by the framework. In this article, we'll explore how to write and read cookies in ASP.NET Core using C#.
 
 Writing a Cookie:
