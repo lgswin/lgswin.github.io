@@ -14,6 +14,7 @@ Add folders and files.
 Apps
 ├── Compoents
 │   ├── Slider.jsx
+│   ├── PostItem.jsx
 │   ├── Categories.jsx
 │   ├── Header.jsx
 │   └── LatestItemList.cs
