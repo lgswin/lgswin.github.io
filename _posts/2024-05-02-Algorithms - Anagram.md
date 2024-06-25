@@ -2,8 +2,8 @@
 layout: post
 title: "Understanding Anagram Algorithms: Cracking the Puzzle of Reordered Words"
 date: 2024-05-02
-categories: [Algorithm]
-tags: [Algorithm, Anagram, Python]
+categories: [Algorithms]
+tags: [Algorithms, Anagram, Python]
 ---
 
 ## **What is an Anagram?**
