@@ -1,0 +1,165 @@
+---
+layout: post
+title: "Interview questions for JavaScript"
+date: 2024-06-26
+categories: [Interview]
+tags: [Iterview, Javascript]
+---
+
+- **JavaScript Data Types**:
+    - **Primitive types**: `string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`.
+    - **Non-primitive type**: `object` (includes arrays, functions, and objects).
+- **Difference between `let`, `const`, and `var`**:
+    - `var`: Function-scoped, can be redeclared and updated.
+    - `let`: Block-scoped, can be updated but not redeclared.
+    - `const`: Block-scoped, cannot be updated or redeclared.
+- **Explain `hoisting`**:
+    - Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during compilation. Only declarations are hoisted, not initializations.
+- **Closures**:
+    - A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope. It allows functions to access variables from their containing (enclosing) scopes.
+- **The `this` keyword**:
+    - `this` refers to the context in which a function is called. Its value is determined by how the function is called, and can refer to the global object, an object, or be explicitly set using `call`, `apply`, or `bind`.
+- **Event delegation**:
+    - A technique in which a single event listener is added to a parent element to manage events for all its children, improving performance and reducing memory usage.
+- **Arrow functions**:
+    - A concise syntax for writing functions. Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target`, and are always anonymous.
+- **Difference between `==` and `===`**:
+    - `==` (loose equality): Compares values after type coercion.
+    - `===` (strict equality): Compares values without type coercion, ensuring both type and value are the same.
+- **Prototypal inheritance**:
+    - A feature in JavaScript where objects can inherit properties and methods from other objects. Every object has a prototype object from which it can inherit properties.
+- **The `bind()` method**:
+    - `bind()` creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+- **IIFE (Immediately Invoked Function Expression)**:
+    - A function that is defined and executed immediately after its creation. It helps create a local scope to avoid polluting the global scope.
+- **Higher-order functions**:
+    - Functions that operate on other functions, either by taking them as arguments or by returning them.
+- **Difference between `call()` and `apply()`**:
+    - Both invoke a function with a specified `this` value and arguments.
+    - `call()`: Arguments are passed individually.
+    - `apply()`: Arguments are passed as an array.
+- **The `reduce()` function**:
+    - `reduce()` executes a reducer function on each element of the array, resulting in a single output value. It takes two arguments: a reducer function and an initial value.
+- **JavaScript promises**:
+    - Promises represent the eventual completion (or failure) of an asynchronous operation and its resulting value. They have three states: pending, fulfilled, and rejected.
+- **Async/await**:
+    - `async` functions return a promise. The `await` keyword is used inside `async` functions to pause the execution until the promise resolves or rejects.
+- **The event loop**:
+    - A mechanism that handles asynchronous callbacks in JavaScript. It processes the event queue, executing callbacks when the call stack is empty.
+- **`null` and `undefined`**:
+    - `null`: An intentional absence of any object value.
+    - `undefined`: A variable that has been declared but not assigned a value.
+- **JavaScript modules**:
+    - Modules allow code to be organized into separate files, which can import and export functionalities (variables, functions, classes) using `import` and `export` statements.
+- **Purpose of the `map()` method**:
+    - `map()` creates a new array populated with the results of calling a provided function on every element in the calling array.
+- **Concept of `debouncing`**:
+    - Debouncing ensures that a function is not called multiple times in quick succession. It delays the function execution until after a specified wait time has passed since the last call.
+- **Callback function**:
+    - A function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of routine or action.
+- **JSON and its common operations**:
+    - JSON (JavaScript Object Notation) is a lightweight data interchange format. Common operations include `JSON.stringify` (convert object to JSON string) and `JSON.parse` (convert JSON string to object).
+- **Template literals**:
+    - Template literals are string literals that allow embedded expressions, using backticks (```). They support multi-line strings and interpolation.
+- **The `spread` operator**:
+    - The spread operator (`...`) expands an iterable (like an array) into individual elements. It can be used in array literals, function calls, and object literals.
+- **CORS (Cross-Origin Resource Sharing)**:
+    - A security feature that allows or restricts web pages from making requests to a different domain than the one that served the web page. It is controlled by server-side HTTP headers.
+- **`Promise.all()`**:
+    - A method that takes an array of promises and returns a single promise that resolves when all the promises in the array resolve, or rejects if any promise rejects.
+- **Difference between synchronous and asynchronous code**:
+    - Synchronous code: Executes sequentially, blocking subsequent code until the current operation completes.
+    - Asynchronous code: Executes independently, allowing other operations to continue before the current one finishes.
+- **Difference between `forEach()` and `map()`**:
+    - `forEach()`: Iterates over array elements, performing a function on each element. It doesn't return a new array.
+    - `map()`: Iterates over array elements, performing a function on each element, and returns a new array with the results.
+- **Rest parameters**:
+    - Rest parameters (`...args`) allow a function to accept an indefinite number of arguments as an array.
+- **The `fetch` API**:
+    - A modern interface for making HTTP requests in web browsers, returning promises that resolve with the Response object representing the response to the request.
+- **Use of `localStorage`**:
+    - A web storage API that allows JavaScript sites and apps to store and access data right in the browser with no expiration date. Data persists even after the browser is closed.
+- **Service workers**:
+    - Background scripts that intercept network requests, cache resources, and handle push notifications, enabling offline functionality and improving performance of web applications.
+- **Memoization**:
+    - An optimization technique where function results are cached based on input arguments to avoid redundant computations for the same inputs.
+- **Generator functions**:
+    - Functions that can pause execution and resume later, maintaining their context. Defined with an `` (asterisk) and use the `yield` keyword to return intermediate results.
+- **Concept of `currying`**:
+    - Transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.
+- **Use of `Symbol`**:
+    - A unique and immutable data type used to create unique identifiers for object properties, avoiding name conflicts.
+- **JavaScript iterators**:
+    - Objects that define a sequence and potentially a return value upon its termination. They implement the `Iterator` protocol with `next()` method.
+- **Concept of `throttling`**:
+    - Throttling ensures that a function is not called more than once in a specified period. It limits the rate of function execution.
+- **Difference between `slice()` and `splice()`**:
+    - `slice()`: Returns a shallow copy of a portion of an array into a new array, without modifying the original array.
+    - `splice()`: Adds/removes elements to/from an array, modifying the original array.
+- **Concept of `promisify`**:
+    - Converting a callback-based function to a promise-based function, making it easier to work with async/await syntax.
+- **The `prototype` property**:
+    - An object automatically associated with every function and object in JavaScript. Objects inherit properties and methods from their prototype.
+- **The `Reflect` API**:
+    - A built-in object providing methods for interceptable JavaScript operations (similar to proxy handlers), making operations more predictable.
+- **The `new` keyword**:
+    - Used to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+- **Purpose of `Object.freeze()`**:
+    - Freezes an object, preventing new properties from being added, existing properties from being removed, or current properties from being changed.
+- **Concept of `lazy loading`**:
+    - Deferring the loading of resources (like images, scripts) until they are needed to improve performance and reduce initial load time.
+- **Difference between `innerHTML` and `innerText`**:
+    - `innerHTML`: Gets or sets the HTML markup contained within an element.
+    - `innerText`: Gets or sets the text content of an element, stripping out any HTML tags.
+- **Mixins**:
+    - A way to include reusable functionalities in classes. They allow objects to borrow methods from multiple sources.
+- **Polyfills**:
+    - Code that provides modern functionality in older browsers that do not natively support it.
+- **Use of `Set` and `Map`**:
+    - `Set`: A collection of unique values.
+    - `Map`: A collection of key-value pairs, where keys can be of any type.
+- **Purpose of `Function.prototype.call()`**:
+    - Calls a function with a specified `this` value and arguments provided individually.
+- **Difference between `window.onload` and `document.onload`**:
+    - `window.onload`: Fired when the entire page, including all dependent resources, has loaded.
+    - `document.onload`: There is no `document.onload`. You might be referring to `DOMContentLoaded`, which fires when the initial HTML document has been completely loaded and parsed.
+- **Strict mode in JavaScript**:
+    - A way to opt into a restricted variant of JavaScript, which eliminates some silent errors and improves performance. Enabled by adding `"use strict";` at the beginning of a script or function.
+- **Web components**:
+    - A set of technologies to create reusable custom elements with encapsulated functionality, including Custom Elements, Shadow DOM, and HTML Templates.
+- **WebAssembly**:
+    - A binary instruction format for a stack-based virtual machine, enabling high-performance web applications by compiling code written in other languages to run in the browser.
+- **Shadow DOM**:
+    - A web standard that provides encapsulated DOM and style for web components, ensuring that the internal structure is hidden from the global DOM.
+- **Node.js**:
+    - A JavaScript runtime built on Chrome's V8 engine, enabling server-side JavaScript execution. It uses an event-driven, non-blocking I/O model for building scalable network applications.
+- **`npm` and its use**:
+    - `npm` (Node Package Manager) is a package manager for JavaScript, providing a registry for open-source projects and a command-line tool to manage package dependencies.
+- **Event bubbling**:
+    - A process in which an event starts from the target element and propagates up to the root of the DOM tree, triggering event handlers on ancestors in sequence.
+- **Custom events**:
+    - Events created and dispatched by developers to signal specific actions or state changes in an application, using `Event` or `CustomEvent` constructors.
+- **Use of `defer` and `async` attributes in script tags**:
+    - `defer`: Scripts are executed in order, after the HTML document has been parsed.
+    - `async`: Scripts are executed as soon as they are downloaded, without waiting for other scripts or the HTML document to be fully parsed.
+- **Difference between `NodeList` and `HTMLCollection`**:
+    - `NodeList`: A collection of nodes, typically returned by methods like `querySelectorAll()`. Can be static or live.
+    - `HTMLCollection`: A collection of HTML elements, typically live, returned by methods like `getElementsByTagName()`.
+- **Event capturing**:
+    - The process in which an event starts from the root of the DOM tree and propagates down to the target element, triggering event handlers on ancestors in sequence before the target element.
+- **Difference between `Array` and `Array-like objects`**:
+    - `Array`: A list-like object with methods like `push`, `pop`, `map`, etc.
+    - `Array-like objects`: Objects with a `length` property and indexed elements, but lacking array methods. Example: `arguments` object.
+- **Use of `Function.prototype.bind()`**:
+    - `bind()` creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+- **ECMAScript**:
+    - A scripting language specification on which JavaScript is based. It standardizes core features of JavaScript and other scripting languages.
+- **Difference between `function declaration` and `function expression`**:
+    - `Function declaration`: Declares a named function and is hoisted. Example: `function foo() {}`.
+    - `Function expression`: Defines a function inside an expression and is not hoisted. Example: `const foo = function() {}`.
+- **DOM manipulation**:
+    - The process of using JavaScript to dynamically change the content, structure, and style of a web page. Methods include `getElementById`, `appendChild`, `removeChild`, etc.
+- **Destructuring assignments**:
+    - A syntax that allows unpacking values from arrays or properties from objects into distinct variables. Example: `const [a, b] = [1, 2]; const {x, y} = {x: 10, y: 20};`.
+- **Explain `hoisting`**:
+    - Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during compilation. Only declarations are hoisted, not initializations.
