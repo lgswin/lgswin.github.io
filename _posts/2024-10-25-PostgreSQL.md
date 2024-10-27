@@ -6,35 +6,44 @@ categories: [Database]
 tags: [PostgreSQL]
 ---
 
-**Quick Guide to PostgreSQL Setup and Role Management on 
+**Start PostgreSQL service** 
 
-- Start PostgreSQL service
-brew services start postgresql
+`brew services start postgresql`
 
-- Access PostgreSQL
-psql postgres 
+**Access PostgreSQL**
 
-- To View existing roles
-postgres=# \du
+`psql postgres`
 
-- Create a new role named postgres with login privileges and a password:
-postgres=# CREATE ROLE postgres WITH LOGIN PASSWORD 'postgres'
+**To View existing roles** 
 
-- Grant the role database creation permissions:
-postgres=# ALTER ROLE postgres CREATEDB;
-postgres=# ALTER ROLE postgres CREATEROLE;
+`postgres=# \du`
 
-- Connect as the new role
-psql postgres -U postgres 
+**Create a new role named postgres with login privileges and a password**
 
-- Create a new database
-postgres=> CREATE DATABASE databasename
+`postgres=# CREATE ROLE postgres WITH LOGIN PASSWORD ‘postgres’`
 
-- Grant all privileges on the database to a specific user
-postgres=> GRANT ALL PRIVIELEGES ON DATABASE databasename TO username
+**Grant the role database creation permissions**
 
-- List all databases:
-postgres=> \list;
+`postgres=# ALTER ROLE postgres CREATEDB;` 
 
-- Connect to your database
-postgres=> \connect databasename;
+`postgres=# ALTER ROLE postgres CREATEROLE;`
+
+**Connect as the new role** 
+
+`psql postgres -U postgres`
+
+**Create a new database** 
+
+`postgres=> CREATE DATABASE databasename`
+
+**Grant all privileges on the database to a specific user** 
+
+`postgres=> GRANT ALL PRIVIELEGES ON DATABASE databasename TO username`
+
+**List all databases**
+
+`postgres=> \list;`
+
+**Connect to your database** 
+
+`postgres=> \connect databasename;`
