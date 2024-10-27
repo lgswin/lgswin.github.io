@@ -5,6 +5,9 @@ date: 2024-10-11
 categories: [DevOps]
 tags: [DevOps]
 ---
+**Poster of DevOps**
+![DEVOPS](https://github.com/user-attachments/assets/438b6782-068f-4fee-9c40-9a0a19472325)
+
 
 **Understanding the Basics of DevOps**
 
