@@ -183,16 +183,19 @@ server {
 }
 ```
 
-### 16. Enable and Restart Nginx
+### 16. Enable and Restart Nginx (** this is important when the nginx server is not working properly **)
+
+- Test the Nginx configuration:
+
+```bash
+sudo nginx -t
+```
 
 - Enable the Nginx configuration by creating a symbolic link and restart Nginx.
 
 ```bash
-bash
-코드 복사
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled
 sudo systemctl restart nginx
-
 ```
 
 ### 17. Configure Gunicorn as a Service (Optional)
