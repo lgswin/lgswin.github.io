@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WordPress installation on GCP"
+title: "More action for web site"
 date: 2025-1-10
 categories: [WordPress]
 tags: [WordPress, Homepage, GCP]
