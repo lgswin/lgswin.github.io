@@ -190,6 +190,8 @@ stash와 차이점
     
     `git push origin <branch-name> --force`
     
+    `git push origin main --force`
+    
     - 주의
     
     이 방법은 force push를 사용하므로, 협업 중인 다른 개발자들이 영향을 받을 수 있습니다. 주의 깊게 사용하세요.
