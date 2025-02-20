@@ -276,3 +276,21 @@ git 완전초기화
 `git config --global user.name "GsLee"`
 
 `git config --global user.email [lgswin@gmail.com](mailto:lgswin@gmail.com)`
+
+git에 아직 싱크되지 않은 commit이 있는 상태에서 local에 새로운 commit을 푸시하려고 할때 서로 충돌 나는 상태
+
+1.	Fetch the latest changes from the remote repository:
+
+`git fetch origin`
+
+2.	Merge the remote changes into your local branch:
+
+`git merge origin/main`
+
+3.	If everything is fine, commit the merge:
+
+`git commit -m "Merged origin/main into main"`
+
+4.	Push the merged changes back to the remote repository:
+
+`git push origin main`
