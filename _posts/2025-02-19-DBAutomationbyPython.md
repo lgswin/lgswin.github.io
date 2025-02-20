@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Database Automation by python and github action"
-date: 2025-2-18
+date: 2025-2-19
 categories: [Database]
 tags: [Database automation, python, github action]
 ---
